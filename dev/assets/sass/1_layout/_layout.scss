@@ -1,0 +1,24 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    width: 100%;
+    min-width: 1320px;
+
+    @include sp {
+        min-width: 320px;
+    }
+
+    &.is-fixed {
+        position: fixed;
+    }
+}
+
+.l-container {
+    padding: 0 20px;
+    width: 1320px;
+    margin: 0 auto;
+
+    @include sp {
+        width: auto;
+    }
+}
