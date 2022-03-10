@@ -1,24 +1,75 @@
 /* layout
 ------------------------------------------------------------*/
-body {
-    width: 100%;
-    min-width: 1320px;
+// body {
+//     width: 100%;
+//     min-width: 1320px;
 
-    @include sp {
-        min-width: 320px;
-    }
+//     @include sp {
+//         min-width: 320px;
+//     }
 
-    &.is-fixed {
-        position: fixed;
-    }
-}
+//     &.is-fixed {
+//         position: fixed;
+//     }
+// }
 
 .l-container {
-    padding: 0 20px;
-    width: 1320px;
+    width: 1280px;
     margin: 0 auto;
 
     @include sp {
         width: auto;
     }
+
+    &__workstaff {
+        width: 980px;
+        margin: 0 auto;
+        padding-top: 51px;
+        height: 2345px;
+        border: 10px solid $colorLightBlue;
+
+        .c-work {
+            margin: 60px 50px 0;
+        }
+
+        .c-work2{
+            margin-top: 62px;
+        }
+
+        .c-work3{
+            margin-top: 54px;
+        }
+    }
+}
+
+.l-container1 {
+    width: 1180px;
+    margin: 0 auto;
+    background-color: $colorLightBlue;
+
+    &__business {
+        background-color: #EFF2F4;
+        height: 752px;
+        margin-top: 152px;
+    }
+
+    &__staff {
+        width: 980px;
+        background-color: $colorWhite;
+        margin-top: 80px;
+    }
+    
+}
+
+.l-container2 {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &--reserve {
+        flex-direction: row-reverse;
+    }
+
+    
 }

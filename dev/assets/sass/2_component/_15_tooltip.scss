@@ -1,0 +1,46 @@
+.c-tooltip {
+    position: relative;
+
+    &__general {
+        margin-top: 428px;
+        display: none;
+    }
+
+    &__txt {
+        display: block;
+        width: 980px;
+        background-color: $colorBlue;
+        border-radius: 98px;
+        font-size: 28px;
+        font-family: $notosan;
+        line-height: 40px;
+        padding: 19px 169px;
+        text-align: center;
+        color: $colorWhite;
+        letter-spacing: 2.5px;
+    }
+
+    &__txt2 {
+        margin-left: -258px;
+    }
+    &__txt3 {
+        margin-left: -513px;
+    }
+    &__txt4 {
+        margin-left: -768px;
+    }
+
+    &__subTooltip {
+        border: 20px;
+        border-style: solid;
+        border-color: transparent;
+        border-top-color: $colorBlue;
+        display: block;
+        width: 0;
+        height: 0;
+        margin-top: -20px;
+        border-bottom: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

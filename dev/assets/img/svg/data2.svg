@@ -1,0 +1,46 @@
+<svg id="Component_113_1" data-name="Component 113 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260.118" height="150.936" viewBox="0 0 260.118 150.936">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_17690" data-name="Rectangle 17690" width="144" height="143.936" fill="none"/>
+    </clipPath>
+  </defs>
+  <text id="製造" transform="translate(235.097 36)" fill="#111" font-size="12" font-family="NotoSansJP-Regular, Noto Sans JP" letter-spacing="0.05em"><tspan x="0" y="0">製造</tspan></text>
+  <text id="営業" transform="translate(0.097 111)" fill="#111" font-size="12" font-family="NotoSansJP-Regular, Noto Sans JP" letter-spacing="0.05em"><tspan x="0" y="0">営業</tspan></text>
+  <text id="研究開発" transform="translate(0.097 71)" fill="#111" font-size="12" font-family="NotoSansJP-Regular, Noto Sans JP" letter-spacing="0.05em"><tspan x="0" y="0">研究開発</tspan></text>
+  <text id="調達_事務他" data-name="調達・事務他" transform="translate(0.097 14)" fill="#111" font-size="12" font-family="NotoSansJP-Regular, Noto Sans JP" letter-spacing="0.05em"><tspan x="0" y="0">調達・事務他</tspan></text>
+  <text id="設計" transform="translate(235.097 131)" fill="#111" font-size="12" font-family="NotoSansJP-Regular, Noto Sans JP" letter-spacing="0.05em"><tspan x="0" y="0">設計</tspan></text>
+  <path id="Path_19139" data-name="Path 19139" d="M578,2013.968H519.9" transform="translate(-519.903 -1935)" fill="none" stroke="#0288d1" stroke-width="1"/>
+  <path id="Path_19143" data-name="Path 19143" d="M617,2013.968H519.9" transform="translate(-519.903 -1991.969)" fill="none" stroke="#0288d1" stroke-width="1"/>
+  <path id="Path_19142" data-name="Path 19142" d="M600,2013.968H519.9" transform="translate(-519.903 -1895)" fill="none" stroke="#0288d1" stroke-width="1"/>
+  <path id="Path_19140" data-name="Path 19140" d="M607.021,2013.968H519.9" transform="translate(-346.903 -1970)" fill="none" stroke="#0288d1" stroke-width="1"/>
+  <path id="Path_19141" data-name="Path 19141" d="M623.021,2013.968H519.9" transform="translate(-362.925 -1874.969)" fill="none" stroke="#0288d1" stroke-width="1"/>
+  <g id="Group_17996" data-name="Group 17996" transform="translate(58.097 7)">
+    <g id="Group_17996-2" data-name="Group 17996" clip-path="url(#clip-path)">
+      <path id="Path_19134" data-name="Path 19134" d="M72.041,71.958,3.6,49.722C13.429,19.484,40.248,0,72.041,0Z" fill="#57b1e4"/>
+      <path id="Path_19135" data-name="Path 19135" d="M72.041,71.958,2.534,90.582A70.05,70.05,0,0,1,3.6,49.722Z" fill="#00a299"/>
+      <path id="Path_19136" data-name="Path 19136" d="M72.041,71.958,26.756,127.88a68.95,68.95,0,0,1-24.222-37.3Z" fill="#badd7a"/>
+      <path id="Path_19137" data-name="Path 19137" d="M72.041,71.958,139.22,97.746a71.959,71.959,0,0,1-92.967,41.391,68.4,68.4,0,0,1-19.5-11.257Z" fill="#607c93"/>
+      <path id="Path_19138" data-name="Path 19138" d="M72.041,71.958V0A71.959,71.959,0,0,1,144,71.958a66.613,66.613,0,0,1-4.78,25.788Z" fill="#0088d6"/>
+    </g>
+  </g>
+  <g id="Group_17995" data-name="Group 17995" transform="translate(-400.778 74.447)">
+    <text id="_" data-name="%" transform="translate(560.875 53.552)" fill="#fff" font-size="16" font-family="NotoSansJP-Black, Noto Sans JP" font-weight="800" letter-spacing="0.05em"><tspan x="-7.888" y="0">%</tspan></text>
+    <text id="_30" data-name="30" transform="translate(535.875 56.552)" fill="#fff" font-size="30" font-family="RobotoCondensed-Bold, Roboto" font-weight="700"><tspan x="-15.176" y="0">30</tspan></text>
+  </g>
+  <g id="Group_17993" data-name="Group 17993" transform="translate(-376.778 9.447)">
+    <text id="_2" data-name="%" transform="translate(560.875 53.552)" fill="#fff" font-size="16" font-family="NotoSansJP-Black, Noto Sans JP" font-weight="800" letter-spacing="0.05em"><tspan x="-7.888" y="0">%</tspan></text>
+    <text id="_31" data-name="31" transform="translate(535.875 56.552)" fill="#fff" font-size="30" font-family="RobotoCondensed-Bold, Roboto" font-weight="700"><tspan x="-15.176" y="0">31</tspan></text>
+  </g>
+  <g id="Group_17994" data-name="Group 17994" transform="translate(-451.778 59.447)">
+    <text id="_3" data-name="%" transform="translate(560.875 52.552)" fill="#fff" font-size="16" font-family="NotoSansJP-Black, Noto Sans JP" font-weight="800" letter-spacing="0.05em"><tspan x="-7.888" y="0">%</tspan></text>
+    <text id="_10" data-name="10" transform="translate(535.875 56.552)" fill="#fff" font-size="30" font-family="RobotoCondensed-Bold, Roboto" font-weight="700"><tspan x="-15.176" y="0">10</tspan></text>
+  </g>
+  <g id="Group_17997" data-name="Group 17997" transform="translate(-464.778 31.447)">
+    <text id="_4" data-name="%" transform="translate(553.875 53.552)" fill="#fff" font-size="16" font-family="NotoSansJP-Black, Noto Sans JP" font-weight="800" letter-spacing="0.05em"><tspan x="-7.888" y="0">%</tspan></text>
+    <text id="_9" data-name="9" transform="translate(535.875 56.552)" fill="#fff" font-size="30" font-family="RobotoCondensed-Bold, Roboto" font-weight="700"><tspan x="-7.588" y="0">9</tspan></text>
+  </g>
+  <g id="Group_17998" data-name="Group 17998" transform="translate(-440.778 -5.553)">
+    <text id="_5" data-name="%" transform="translate(560.875 53.552)" fill="#fff" font-size="16" font-family="NotoSansJP-Black, Noto Sans JP" font-weight="800" letter-spacing="0.05em"><tspan x="-7.888" y="0">%</tspan></text>
+    <text id="_20" data-name="20" transform="translate(535.875 56.552)" fill="#fff" font-size="30" font-family="RobotoCondensed-Bold, Roboto" font-weight="700"><tspan x="-15.176" y="0">20</tspan></text>
+  </g>
+</svg>
