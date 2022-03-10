@@ -4,5 +4,73 @@ img
 
 /*
 ------------------------------------------------------------*/
+.c-img {
+    &__company {
+        margin-top: 50px;
+    }
 
+    &__data{
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        &--url1 {
+            padding-top: 7px;
+        }
+        &--url2 {
+            padding-top: 17px;
+        }
+        &--url3 {
+            padding-top: 24px;
+        }
+        &--url4 {
+            padding-top: 8px;
+        }
+        &--url5 {
+            padding-top: 8px;
+        }
+        &--url6 {
+            padding-top: 7px;
+        }
+    }
+
+    &__service {
+        margin-top: 76px;
+        &--reserve {
+            margin-top: 69px;
+        }
+    }
+
+    &__service3 {
+        margin-top: 43px;
+        margin-left: -30px;
+        width: 410px;
+    }
+
+    &__service4 {
+        margin-top: -22px;
+    }
+
+
+    &__work {
+        display: flex;
+        justify-content: space-between;
+
+        &__content {
+            width: 50%;
+        }
+
+        &--reserve {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            img {
+                float: right;
+            }
+        }
+    }
+    &__info {
+        width: 50%;
+    }
+}
 

@@ -1,0 +1,73 @@
+.c-block {
+
+    $root: &;
+
+    &__company {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+
+    #{$root}__item {
+        width: 300px;
+        height: 287px;
+        background-color: $colorWhite;
+        margin-top: 40px;
+        position: relative;
+        
+
+        &::before {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 20%;
+            height: 4px;
+            background: $colorBlue;
+            max-width: 300px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    &__business {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__general {
+        width: 214px;
+        height: 333px; 
+        background-color: white;
+        margin-top: 95px;
+        
+        &:hover {
+            height: 388px;
+            margin-top: 20px;
+            border: 3px solid $colorBlue;
+            .c-tooltip__general {
+                display: block;
+            }
+        }
+    }
+
+    &__business1{
+        margin-left: 100px;
+    }
+    &__business4{
+        margin-right: 100px;
+    }
+
+
+    &__work {
+        margin-top: 42px;
+        background-color: $colorLightBlue;
+        height: 349px;
+        padding: 0 40px;
+
+        &__item2 {
+            margin-top: -3px;
+        }
+    }
+}

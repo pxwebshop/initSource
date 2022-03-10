@@ -1,5 +1,60 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-    
+    $root: &;
+    height: 78px;
+
+    &__logo {
+        margin-top: 12px;
+        margin-left: 40px
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        // position: fixed;
+        // z-index: 10000;
+        // background-color: $colorWhite;
+    }
+
+    &__list {
+
+        #{$root}__item{
+            display: inline-block;
+            line-height: 78px;
+
+            &__link {
+                display: grid;
+                text-align: center;
+                padding: 16.5px 30px;
+            }
+
+            &__txt {
+                font-size: 18px;
+                line-height: 26px;
+                font-family: 'Roboto';
+                font-weight: bold;
+                color: $colorBlue;
+                letter-spacing: 0.5px;
+                &--transparent {
+                    opacity: 0;
+                }
+            }
+
+            &__subTxt {
+                font-size: 12px;
+                line-height: 18px;
+                font-family: $notosan;
+            }
+
+            &--background {
+                display: inline-block;
+                height: 78px;
+                padding: 0 5px;
+                font-size: 14px;
+                background: $colorYellow url(../../../assets/img/svg/icon-entry.svg) no-repeat center 14px;
+            }
+
+        }
+    }
 }

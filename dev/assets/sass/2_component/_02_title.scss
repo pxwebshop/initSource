@@ -6,5 +6,123 @@ title
 /*
 ------------------------------------------------------------*/
 .c-title1 {
-	
+    padding-top: 102px;
+    margin-bottom: 80px;
+
+    &__img {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+	&__description {
+        font-size: 32px;
+        font-weight: bold;
+        font-family: $notosan;
+        display: block;
+        text-align: center;
+        letter-spacing: 3px;
+        &--height {
+            padding-top: 22px;
+        }
+    }
+}
+
+.c-title2 {
+
+
+
+    &__name {
+        font-size: 28px;
+        line-height: 54px;
+        font-family: $notosan;
+        display: block;
+        text-align: center;
+        color: $colorBlue;
+        letter-spacing: 3px;
+        &--font {
+            font-size: 32px;
+            padding-top: 90px;
+        }
+        &__business {
+            font-size: 32px;
+        }
+        &--spacingWork {
+            letter-spacing: 5px;
+        }
+
+        &__staff {
+            letter-spacing: 5px;
+        }
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 23px;
+        font-family: $roboto;
+        display: block;
+        text-align: center;
+        color: $colorGrey;
+        letter-spacing: 1px;
+        
+        &__business {
+            line-height: 28px;
+        }
+    }
+
+    &__business {
+        margin-top: 171px;
+    }
+
+    
+}
+
+.c-title3 {
+    font-size: 18px;
+    line-height: 36px;
+    font-family: $notosan;
+    font-weight: bold;
+    color: $colorBlue;
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    &__work {
+        text-align: left;
+        letter-spacing: 2px;
+    }
+}
+
+.c-title4 {
+    font-size: 32px;
+    line-height: 48px;
+    font-family: $notosan;
+    font-weight: bold;
+    color: $colorBlack;
+
+    &__service4 {
+        margin-top: -22px;
+    }
+
+    &_business {
+        padding-top: 60px;
+        text-align: center;
+        letter-spacing: 3px;
+        border-bottom: 1px solid $colorBlue;
+        padding-bottom: 16px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    &__work {
+        padding: 11px 0 15px 0;
+        border-bottom: 1px solid $colorBlue;
+        margin-bottom: 13px;
+    }
+    &__txt {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
 }

@@ -4,3 +4,86 @@ text
 
 /*
 ------------------------------------------------------------*/
+.c-text {
+    $root: &;
+
+    font-size: 16px;
+    line-height: 40px;
+    font-family: $notosan;
+    color: $colorLightBlack;
+
+    &__company {
+        width: 50%;
+        margin-top: 42px;
+
+        #{$root}__company2 {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__data {
+        font-size: 12px;
+        line-height: 30px;
+        font-family: $notosan;
+        letter-spacing: 1px;
+        color: $colorBlack;
+        text-align: center;
+        margin-top: 6px;
+
+        &1 {
+            margin-top: -4px;
+        }
+    }
+
+
+    &__service {
+        width: 50%;
+        margin-top: 76px;
+        padding-left: 42px;
+        letter-spacing: 1px;
+
+        &--reserve {
+            padding-left: 0;
+            padding-right: 42px;
+            margin-top: 70px;
+        }
+
+        &--height {
+            padding-top: 55px;
+            position: relative;
+            letter-spacing: 0;
+        }
+
+        &--height::before {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 17px;
+            width: 7%;
+            height: 4px;
+            background: $colorBlue;
+            max-width: 200px;
+            left: 15px; /* one way to center */
+            transform: translate(-50%, 0);     
+        }
+
+    }
+
+    &__service3 {
+        width: 60%;
+        padding-left: 0;
+        margin-top: 71px;
+    }
+
+    &__work {
+        line-height: 30px;
+        margin-top: 4px;
+    }
+
+    &__staff {
+        margin-top: 54px;
+        letter-spacing: 2px;
+    }
+
+}
