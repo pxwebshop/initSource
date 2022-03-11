@@ -1,5 +1,63 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-    
+    width: 100%;
+    margin: 0 auto;
+    $root: &;
+    background-color: $colorWhite;
+    position: fixed;
+    height: 80px;
+    z-index: 99;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        padding: 15px 40px;
+        float: left;
+    }
+    &__nav {
+        display: flex;
+        float: right;
+    }
+    &__list {
+        display: flex;
+        flex: 1;
+    }
+    &__entry {
+        margin-right: 40px;
+        width: 120px;
+        height: 80px;
+        background: $colorYellow url(../../../assets/img/svg/icon-entry.svg) no-repeat center 18px;
+        span {
+            font-size: 18px;
+            line-height: 1.5;
+            color: $colorBlack;
+            font-family: $roboto;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-top: 44px;
+            margin-left: 34px;
+            display: block;
+        }
+    }
+    &__txt {
+        font-size: 18px;
+        line-height: 1.5;
+        color: $colorBlue;
+        font-family: $roboto;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    &__subTxt {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    &__item {
+        padding: 19px 24px;
+        text-align: center;
+        display: block;
+    }
 }

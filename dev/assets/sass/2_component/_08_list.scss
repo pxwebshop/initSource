@@ -5,5 +5,275 @@ list
 /*
 ------------------------------------------------------------*/
 .c-list1{
-	
+    $root: &;
+
+	display: flex;
+        justify-content: space-between;
+        @include sp(){
+            flex-wrap: wrap;
+        }
+
+    &__item {
+        width: 300px;
+        height: 452px;
+        margin-top: 31px;
+        &:hover {
+			cursor: pointer;
+		}
+        @include sp() {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+            }
+        }
+
+        #{$root}__info {
+            padding: 35px 35px 23px 35px;
+        }
+        #{$root}__title {
+            color: $colorBlue;
+            font-size: 14px;
+            font-family: $notosan;
+            line-height: 21px;
+        }
+        #{$root}__name {
+            margin-top: 10px;
+            color: $colorBlack;
+            font-size: 24px;
+            font-family: $notosan;
+            line-height: 36px;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+        #{$root}__time {
+            margin-top: 8px;
+            color: $colorBlack;
+            font-size: 14px;
+            font-family: $notosan;
+            line-height: 21px;
+            letter-spacing: 1px;
+        }
+        box-shadow: 0 0 20px 1px #bdbdbd;
+    }
+}
+
+.c-list2 {
+    $root: &;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 300px;
+        height: 287px;
+        padding-top: 27px;
+        margin-bottom: 40px;
+        background-color: $colorWhite;
+        // margin-top: 40px;
+        position: relative;
+        
+        &::before {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 20%;
+            height: 4px;
+            background: $colorBlue;
+            max-width: 300px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        @include sp {
+            width: 100%;
+            margin: 0 0 20px;
+            padding: 22px 20px 20px;
+        }
+        
+    }
+    &__title {
+        text-align: center;
+        font-size: 18px;
+        line-height: 2;
+        color: $colorBlue;
+        font-weight: bold;
+        @include sp {
+            font-size: 16px;
+            line-height: 1.2;
+        }
+    }
+    &__img {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        @include sp {
+            margin: 15px 0 0;
+        }
+    }
+    &__info {
+        text-align: center;
+        margin: 9px 0 0;
+        @include sp {
+            margin: 13px 0 0;
+        }
+    }
+    &__number {
+        font-size: 55px;
+        line-height: 0.56;
+        color: $colorBlack;
+        font-weight: 900;
+        margin: 0 0 8px;
+        // @include sp {
+        //     font-size: 59px;
+        //     margin: 0 0 7px;
+        // }
+
+        span {
+            font-size: 20px;
+            line-height: 1;
+            color: $colorBlack;
+            font-weight: bold;
+            font-family: $roboto;
+
+            @include sp {
+                font-size: 21px;
+                margin: 0 3px 0 0;
+            }
+        }
+    }
+    &__txt {
+        font-size: 12px;
+        line-height: 2.5;
+        color: $colorBlack;
+        letter-spacing: 0.6px;
+        @include sp {
+            font-size: 10px;
+            line-height: 1.5;
+        }
+    }
+
+}
+
+.c-list3 {
+    padding: 0 70px;
+    background-color: $colorLightBlue;
+    $root: &;
+
+    &__row {
+        border-top: 1px solid $colorBlue;
+        display: flex;
+        #{$root}__name {
+            padding: 40px;
+            font-size: 18px;
+            line-height: 2;
+            font-weight: bold;
+            font-family: $notosan;
+            width: 210px;
+            height: 106px;
+        }
+        #{$root}__content {
+            padding: 40px;
+            font-size: 18px;
+            line-height: 2;
+            font-family: $notosan;
+        }
+        #{$root}__item::marker {
+            color: $colorBlue;
+        }
+    }
+
+}
+
+.c-list4 {
+    $root: &;
+    margin-bottom: 42px;
+
+    &__row {
+        border: 1px solid #CCCCCC;
+        background: url(../../../assets/img/svg/step01.svg) no-repeat 62px 53px, url(../../../assets/img/svg/icon-laptop-entry.svg) no-repeat 150px 57px;
+    }
+
+    &__item {
+        margin: 57px 60px 61px 250px;
+        #{$root}__name {
+            font-size: 20px;
+            line-height: 1.5;
+            font-weight: bold;
+            font-family: $notosan;
+        }
+        #{$root}__content {
+            font-size: 16px;
+            line-height: 2;
+            font-family: $notosan;
+            letter-spacing: 2px;
+            margin-top: 7px;
+        }
+    }
+}
+
+.c-list5 {
+    display: flex;
+    justify-content: space-between;
+    
+
+    &__item {
+        width: 214px;
+        height: 333px; 
+        background-color: white;
+        margin-top: 95px;
+        
+        &:hover {
+            height: 388px;
+            margin-top: 20px;
+            border: 3px solid $colorBlue;
+            .c-list5__tooltip {
+                display: block;
+            }
+        }
+    }
+
+    &__txt2 {
+        margin-left: -258px;
+    }
+    &__txt3 {
+        margin-left: -513px;
+    }
+    &__txt4 {
+        margin-left: -768px;
+    }
+
+    &__tooltip {
+        margin-top: 428px;
+        display: none;
+    }
+
+    &__txt {
+        display: block;
+        width: 980px;
+        background-color: $colorBlue;
+        border-radius: 98px;
+        font-size: 28px;
+        font-family: $notosan;
+        line-height: 40px;
+        padding: 19px 169px;
+        text-align: center;
+        color: $colorWhite;
+        letter-spacing: 2.5px;
+    }
+
+    &__subTooltip {
+        border: 20px;
+        border-style: solid;
+        border-color: transparent;
+        border-top-color: $colorBlue;
+        display: block;
+        width: 0;
+        height: 0;
+        margin-top: -20px;
+        border-bottom: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

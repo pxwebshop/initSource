@@ -4,6 +4,38 @@ video
 
 /* Slider
 ------------------------------------------------------------*/
-.c-slider{
-   
+.c-slide{
+    background-color: $colorBlue;
+    height: 850px;
+    position: relative;
+    padding-top: 80px;
+
+    &__img {
+       padding-top: 19px;
+       margin-left: -106.3px;
+   }
+
+   &__info {
+       position: absolute;
+       top: 350px;
+       right: 75px;
+       left: 696px;
+   }
+
+   &__title {
+       font-family: $notosan;
+       font-size: 44px;
+       line-height: 70px;
+       color: $colorWhite;
+       letter-spacing: 6.5px;
+   }
+
+   &__content {
+       margin-top: 21px;
+       font-size: 16px;
+       line-height: 42px;
+       font-family: $notosan;
+       color: $colorWhite;
+       font-weight: bold;
+   }
 }
