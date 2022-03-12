@@ -6,5 +6,146 @@ title
 /*
 ------------------------------------------------------------*/
 .c-title1 {
-	
+	$root: &;
+    display: block;
+    text-align: center;
+    
+    figure {
+        @include sp(){
+            max-width: 100%;
+            width: 210px;
+            margin: auto;
+        }
+    }
+
+    &__description {
+        font-size: 3.2rem;
+        line-height: 1.125;
+        font-weight: bold;
+        font-family: $notosan;
+        text-align: center;
+        display: block;
+        margin-top: 7px;
+        letter-spacing: 3.2px;
+        color: $colorBlack;
+        @include sp() {
+            line-height: 1;
+            font-size: 24px;
+            letter-spacing: 1.85px;
+        }
+    }
+}
+
+.c-title2 {
+    $root: &;
+    text-align: center;
+
+    &__jp {
+        display: block;
+        font-size: 28px;
+        font-family: $notosan;
+        font-weight: bold;
+        line-height: 1.93;
+        letter-spacing: 2.8px;
+        color: $colorBlue;
+        @include sp {
+            font-size: 19px;
+            line-height: 1.42;
+            letter-spacing: 1.9px;
+        }
+    }
+
+    &__eng {
+        display: block;
+        font-size: 16px;
+        line-height: 1.6875;
+        color: $colorGrey;
+        font-family: $roboto;
+        letter-spacing: 0.8px;
+        margin: 1px 0 0;
+        @include sp {
+            line-height: 1;
+            margin: 15 0 0;
+        }
+    }
+    &--size2 {
+        #{$root}__jp {
+            font-size: 32px;
+            line-height: 1.75;
+            @include sp {
+                font-size: 19px;
+                line-height: 1.35;
+            }
+        }
+    }
+}
+
+.c-title3 {
+    $root: &;
+
+    &__txt {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.25;
+        font-family: $notosan;
+        border-bottom: 1px solid $colorBlue;
+        padding-bottom: 21px;
+        @include sp(){
+            font-size: 20px;
+            line-height: 1.5;
+            padding-bottom: 14px;
+            letter-spacing: 1px;
+            border-width: 1px;
+        }
+    }
+}
+
+.c-title4 {
+    $root: &;
+    &__txt {
+        display: block;
+        font-size: 32px;
+        line-height: 1.5;
+        font-family: $notosan;
+        position: relative;
+        letter-spacing: 1.4px;
+        padding: 0 0 25px;
+        @include sp {
+            font-size: 20px;
+            letter-spacing: 1px;
+            padding:  0 0 16px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: inline-block;
+            height: 4px;
+            width: 32px;
+            background-color: $colorBlue;
+            @include sp(){
+                bottom: 0;
+                height: 2px;
+                width: 20px;
+            }
+        }
+    }
+}
+
+.c-title5 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.7;
+    color: $colorBlack;
+    font-weight: bold;
+    letter-spacing: 3.2px;
+    border-bottom: 1px solid $colorBlue;
+    padding: 0 0 16px;
+    @include sp {
+        font-size: 18px;
+        line-height: 1.5;
+        letter-spacing: 1.8px;
+        padding: 0 0 14px;
+    }
 }

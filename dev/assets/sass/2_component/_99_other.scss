@@ -4,3 +4,200 @@ other
 
 /*
 ------------------------------------------------------------*/
+.c-block1 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    background-color: $colorLightBlue;
+    padding: 26px 40px 40px;
+    @include sp() {
+        margin: 0 15px;
+        padding: 18px 20px 15px 20px;
+    }
+    $root: &;
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 27px;
+            @include sp() {
+                margin-bottom: 14px;
+            }
+        }
+    }
+    &__title {
+        font-size: 20px;
+        color: $colorBlue;
+        line-height: 1.87;
+        margin-bottom: 7px;
+        font-weight: bold;
+        @include sp() {
+            font-size: 17px;
+            line-height: 1.76;
+            letter-spacing: 0.85px;
+        }
+    }
+    &__txt {
+        line-height: 1.5;
+        color: $colorBlack;
+        font-size: 16px;
+        @include sp() {
+            line-height: 2;
+            font-size: 16px;
+        }
+    }
+}
+
+.c-modal {
+    margin-top: 80px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    top: 0;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    display: none;
+    width: 980px;
+    height: 100%;
+    overflow: scroll;
+    background-color: $colorWhite;
+    border-left: 1px solid $colorBlue;
+    border-right: 2px solid $colorBlue;
+    @include sp {
+        width: 100%;
+        margin-left: -30px;
+        border-top: 1px solid $colorBlue;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 2.5;
+        font-family: $notosan;
+        padding-bottom: 40px;
+    }
+
+    &__img {
+        width: 100%;
+        padding-bottom: 80px;
+        @include sp {
+            padding-bottom: 0;
+        }
+        &--padding {
+            padding: 0 80px 80px 80px;
+            @include sp {
+                padding: 0 30px 30px;
+            }
+        }
+    }
+
+
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__txt {
+        padding: 0 80px;
+        @include sp{
+            padding: 30px;
+        }
+    }
+    &__btn {
+        height: 80px;
+        width: 960px;
+        border-top: 1px solid $colorGrey;
+        margin: 0 auto;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        background-color: $colorWhite;
+        button {
+            width: 100%;
+            height: 100%;
+            background-color: $colorWhite;
+            border: transparent;
+            background: url(../../../assets/img/svg/icon_x.svg) no-repeat 430px center;
+        }
+        @include sp {
+            width: 375px;
+
+            
+        }
+    }
+    
+}
+
+.c-entry {
+    background: $colorBlue;
+    padding: 97px 0 100px;
+    @include sp {
+        padding: 49px 0 50px;
+    }
+
+    //------------------------------------------------------
+    &__inner {
+        max-width: 1040px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+        @include sp {
+            max-width: 100%;
+        }
+    }
+
+    //------------------------------------------------------
+    &__title {
+        text-align: center;
+    }
+
+    //------------------------------------------------------
+    &__eng {
+        display: block;
+        font-size: 6.4rem;
+        line-height: 1.5;
+        color: $colorWhite;
+        font-weight: bold;
+        letter-spacing: 25.6px;
+        @include sp {
+            font-size: 3.2rem;
+            letter-spacing: 12.8px;
+        }
+    }
+
+    //------------------------------------------------------
+    &__jp {
+        display: block;
+        font-size: 2.4rem;
+        line-height: 1.5;
+        color: $colorWhite;
+        font-weight: bold;
+        letter-spacing: 2.4px;
+        @include sp {
+            font-size: 1.6rem;
+            line-height: 1.65;
+            letter-spacing: 1.6px;
+            margin: 4px 0 0;
+        }
+    }
+
+    //------------------------------------------------------
+    &__txt {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 2;
+        color: $colorWhite;
+        margin: 34px 0 0;
+        @include sp {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin: 27px 0 0;
+        }
+    }
+
+    .c-btn {
+        margin-top: 55px;
+        @include sp {
+            margin: 39px 0 0;
+        }
+    }
+}

@@ -14,11 +14,25 @@ body {
 }
 
 .l-container {
-    padding: 0 20px;
-    width: 1320px;
+    max-width: 1180px;
+    width: 100%;
     margin: 0 auto;
-
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
     @include sp {
-        width: auto;
+        max-width: 100%;
+    }
+}
+
+.l-content {
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
+    @include sp {
+        max-width: 100%;
     }
 }

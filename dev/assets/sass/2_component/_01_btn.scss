@@ -4,3 +4,24 @@ btn
 
 /*
 ------------------------------------------------------------*/
+.c-btn {
+    width: 454px;
+    height: 79px;
+    // text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: $notosan;
+    font-weight: bold;
+    color: $colorBlack;
+    background: $colorYellow url(../../../assets/img/svg/icon-entry.svg) no-repeat 157px center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    span {
+        margin-left: 32px;
+    }
+    @include sp {
+        width: 310px;
+        height: 63px;
+    }
+}

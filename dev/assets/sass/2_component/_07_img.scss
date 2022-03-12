@@ -4,5 +4,130 @@ img
 
 /*
 ------------------------------------------------------------*/
+.c-imgtext {
+    $root: &;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include sp {
+        flex-direction: column-reverse;
+    }
 
+    &__info {
+        width: 490px;
+        height: 472px;
+        padding-top: 2px;
+        @include sp {
+            width: 100%;
+        }
 
+        #{$root}__txt {
+            font-size: 16px;
+            line-height: 2.5;
+            font-family: $notosan;
+            @include sp {
+                line-height: 2;
+            }
+        }
+    }
+
+    &__img {
+        // margin-top: 10px;
+        @include sp(){
+            width: 100%;
+        }
+        // img {
+        //     width: 100%;
+        // }
+    }
+
+}
+
+.c-imgtext1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+    $root: &;
+    @include sp {
+        padding: 0;
+    }
+
+    &__img {
+        padding-right: 30px;
+        width: 50%;
+        @include sp(){
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+    &__info {
+        width: 50%;
+        padding-top: 24px;
+        @include sp() {
+            width: 100%;
+            padding-top: 20px;
+        }
+    }
+    &__txt {
+        font-size: 16px;
+        line-height: 2.5;
+        font-weight: 400;
+        margin-top: 34px;
+        @include sp() {
+            font-size: 16px;
+            line-height: 2;
+            margin-top: 11px;
+        }
+    }
+    &--reverse {
+        flex-direction: row-reverse;
+        #{$root}__img {
+            padding-right: 0px;
+            padding-left: 30px;
+            @include sp() {
+                padding-left: 0;
+            }
+        }
+        #{$root}__txt {
+            font-size: 18px;
+            line-height: 2;
+            margin-top: 38px;
+            @include sp() {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+        }
+        #{$root}__info {
+            padding-top: 28px;
+            @include sp() {
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+.c-imgtext3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    $root: &;
+    margin-top: 69px;
+
+    &__info {
+        width: 450px;
+        #{$root}__txt {
+            font-size: 16px;
+            line-height: 2.5;
+            font-family: $notosan;
+            margin-top: 30px;
+        }
+        @include sp() {
+            width: 100%;
+        }
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+
+}
