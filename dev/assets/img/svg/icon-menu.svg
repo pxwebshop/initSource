@@ -1,0 +1,6 @@
+<svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="Rectangle_17" data-name="Rectangle 17" width="32" height="32" fill="#fff" opacity="0"/>
+  <path id="Path_14" data-name="Path 14" d="M31.6,10H.4a.4.4,0,0,0-.4.4v3.2a.4.4,0,0,0,.4.4H31.6a.4.4,0,0,0,.4-.4V10.4A.4.4,0,0,0,31.6,10Z" transform="translate(0 -6)" fill="#fff"/>
+  <path id="Path_15" data-name="Path 15" d="M23.6,35H.4a.4.4,0,0,0-.4.4v3.2a.4.4,0,0,0,.4.4H23.6a.4.4,0,0,0,.4-.4V35.4A.4.4,0,0,0,23.6,35Z" transform="translate(0 -21)" fill="#fff"/>
+  <path id="Path_16" data-name="Path 16" d="M15.6,60H.4a.4.4,0,0,0-.4.4v3.2a.4.4,0,0,0,.4.4H15.6a.4.4,0,0,0,.4-.4V60.4A.4.4,0,0,0,15.6,60Z" transform="translate(0 -36)" fill="#fff"/>
+</svg>

@@ -35,3 +35,18 @@ closeModal3.onclick = function() {
     modalYM.style.display = "none";
     document.body.style.backgroundColor = "white";
 }
+
+// menu mobile
+var menuList = document.getElementsByClassName('c-header__list')[0];
+
+var menuMobile = document.getElementById('menuMobile');
+var x = window.matchMedia("(max-width: 767px)");
+menuMobile.onclick = function() {
+    if (x.matches && menuList.style.display == "block") { // If media query matches
+        menuList.style.display = "none";
+    } else {
+        menuList.style.display = "block";
+    }
+}
+
+
