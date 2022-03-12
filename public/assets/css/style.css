@@ -1222,6 +1222,7 @@ Css of home page
 ------------------------------------------------------------*/
 .p-top {
   line-height: 2;
+  z-index: 0;
 }
 
 .p-top1 {
@@ -1349,6 +1350,11 @@ Css of home page
   line-height: 2;
   color: #000A1C;
   margin: 51px 0 0;
+}
+
+.p-top6 {
+  position: relative;
+  z-index: -1;
 }
 
 .p-top6 .l-content {
