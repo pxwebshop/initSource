@@ -6,4 +6,8 @@ footer
    text-align: center;
    height: 175px;
    color: $colorGrey;
+   @include sp {
+       height: 107px;
+       padding-top: 35px;
+   }
 }

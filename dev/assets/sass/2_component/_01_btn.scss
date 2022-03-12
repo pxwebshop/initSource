@@ -20,4 +20,8 @@ btn
     span {
         margin-left: 32px;
     }
+    @include sp {
+        width: 310px;
+        height: 63px;
+    }
 }

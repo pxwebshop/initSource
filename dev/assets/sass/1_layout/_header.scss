@@ -8,18 +8,35 @@
     position: fixed;
     height: 80px;
     z-index: 99;
+    @include sp() {
+        width: 375px;
+        height: 60px;
+        display: none;
+    }
 
     &__menu {
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: space-between;
     }
     &__logo {
         padding: 15px 40px;
         float: left;
+        @include sp {
+            width: 52%;
+            max-width: 187px;
+            margin: -5px 0 0;
+        }
+        
     }
     &__nav {
         display: flex;
         float: right;
+        @include sp() {
+            float: left;
+            flex-wrap: wrap;
+        }
     }
     &__list {
         display: flex;

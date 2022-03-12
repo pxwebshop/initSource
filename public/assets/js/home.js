@@ -3,7 +3,7 @@ var modalAK = document.getElementById('modal1');
 var closeModal1 = document.getElementById('btn-closeModal1');
 openModalAK.onclick = function() {
     modalAK.style.display = "flex";
-    document.body.style.backgroundColor = "black";
+    document.body.style.backgroundColor = "#111";
 }
 closeModal1.onclick = function() {
     modalAK.style.display = "none";

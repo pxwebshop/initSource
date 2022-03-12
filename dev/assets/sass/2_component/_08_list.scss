@@ -160,6 +160,9 @@ list
     padding: 0 70px;
     background-color: $colorLightBlue;
     $root: &;
+    @include sp {
+        padding: 0;
+    }
 
     &__row {
         border-top: 1px solid $colorBlue;
@@ -172,15 +175,26 @@ list
             font-family: $notosan;
             width: 210px;
             height: 106px;
+            @include sp {
+                padding: 20px 0 0;
+                width: 100px;
+            }
         }
         #{$root}__content {
             padding: 40px;
             font-size: 18px;
             line-height: 2;
             font-family: $notosan;
+            @include sp {
+                padding: 0 0 20px;
+                margin-top: -50px;
+            }
         }
         #{$root}__item::marker {
             color: $colorBlue;
+        }
+        @include sp {
+            display: block;
         }
     }
 
@@ -193,6 +207,9 @@ list
     &__row {
         border: 1px solid #CCCCCC;
         background: url(../../../assets/img/svg/step01.svg) no-repeat 62px 53px, url(../../../assets/img/svg/icon-laptop-entry.svg) no-repeat 150px 57px;
+        @include sp {
+            background: url(../../../assets/img/svg/step01.svg) no-repeat 30px center;
+        }
     }
 
     &__item {
@@ -202,6 +219,10 @@ list
             line-height: 1.5;
             font-weight: bold;
             font-family: $notosan;
+            @include sp { font-size: 16px; }
+        }
+        @include sp {
+            margin: 30px 30px 30px 100px;
         }
         #{$root}__content {
             font-size: 16px;
@@ -209,6 +230,9 @@ list
             font-family: $notosan;
             letter-spacing: 2px;
             margin-top: 7px;
+            @include sp {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -223,6 +247,12 @@ list
         height: 333px; 
         background-color: white;
         margin-top: 95px;
+        @include sp {
+            width: 300px;
+            height: 300px;
+            margin-top: 32px;
+            
+        }
         
         &:hover {
             height: 388px;
@@ -231,22 +261,41 @@ list
             .c-list5__tooltip {
                 display: block;
             }
+            @include sp {
+                width: 300px;
+                height: 300px;
+                margin-bottom: 75px;
+            }
         }
     }
 
     &__txt2 {
         margin-left: -258px;
+        @include sp {
+            margin-left: 0;
+        }
     }
     &__txt3 {
         margin-left: -513px;
+        @include sp {
+            margin-left: 0;
+        }
     }
     &__txt4 {
         margin-left: -768px;
+        @include sp {
+            margin-left: 0;
+        }
     }
 
     &__tooltip {
         margin-top: 428px;
         display: none;
+        @include sp {
+            margin-top: 320px;
+            margin-left: -3px;
+            position: absolute;
+        }
     }
 
     &__txt {
@@ -261,6 +310,14 @@ list
         text-align: center;
         color: $colorWhite;
         letter-spacing: 2.5px;
+        @include sp {
+            width: 300px;
+            height: 60px;
+            padding: 0;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px 9px;
+        }
     }
 
     &__subTooltip {

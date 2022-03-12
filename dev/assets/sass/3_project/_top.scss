@@ -8,11 +8,20 @@ Css of home page
 	// padding: 30px 0;
 	//-------------------------------------------------------
 	&1{
-		position: relative;;
+		position: relative;
 		margin-top: -119px;
 		padding-top: 102px;
 		margin-left: 50px;
-		
+		@include sp {
+			width: 360px;
+			margin-top: -50px;
+			padding-top: 50px;
+			margin-left: 0;
+			background-color: $colorLightBlue;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
 
 		&::after {
 			content: '';
@@ -23,6 +32,9 @@ Css of home page
 			top: 0;
 			left: 50%;
             transform: translate(-50%, 0);
+			@include sp {
+				content: none;
+			}
 		}
 
 		&__message {
@@ -33,6 +45,11 @@ Css of home page
 				margin-top: 50px;
 				&__info {
 					margin-top: -13px;
+				}
+				&__img {
+					@include sp {
+						margin-bottom: 30px;
+					}
 				}
 			}
 		}
@@ -47,6 +64,12 @@ Css of home page
 			.c-list2 {
 				margin-top: 37px;
 				padding-bottom: 60px;
+				@include sp {
+					padding-bottom: 15px;
+				}
+			}
+			@include sp {
+				margin-top: 190px;
 			}
 		}
 	}
@@ -58,14 +81,29 @@ Css of home page
 			&__description {
 				margin-top: 25px;
 			}
+			@include sp {
+				margin-top: 50px;
+				margin-left: 0;
+			}
 		}
 
 		.c-title2 {
 			margin-top: 174px;
+			@include sp {
+				margin-top: 80px;
+				
+			}
 		}
 		.c-imgtext3__info--big {
 			width: 567px;
 		}
+		.c-title4 {
+			@include sp {
+				margin-top: 40px;
+			}
+		}
+
+		
 	}
 	//-------------------------------------------------------
 	&3{
@@ -74,15 +112,28 @@ Css of home page
 		width: 1180px;
 		margin: 0 auto;
 		margin-top: 160px;
+		@include sp() {
+			width: 355px;
+			margin-top: 50px;
+			height: 100%;
+			padding-bottom: 30px;
+		}
+		
 		.l-content {
 			display: flex;
 			justify-content: space-between;
+			@include sp {
+				flex-wrap: wrap;
+			}
 		}
 		.c-title4 {
 			padding-top: 60px;
 			text-align: center;
 			span {
 				letter-spacing: 3px;
+				@include sp {
+					letter-spacing: 1px;
+				}
 			}
 			span::after {
 				content: none;
@@ -99,6 +150,10 @@ Css of home page
 			&__txt {
 				margin-bottom: -21px;
 			}
+
+			@include sp {
+				padding: 50px 50px 0;
+			}
 		}
 	}
 	//-------------------------------------------------------
@@ -108,13 +163,26 @@ Css of home page
 			&__description {
 				margin-top: 27px;
 			}
+			@include sp {
+				margin-top: 50px;
+			}
 		}
 		.c-title2 {
 			margin-top: 140px;
 			margin-bottom: 58px;
+			@include sp {
+				margin-top: 80px;
+			}
 		}
 		&__work {
 			border: 5px solid $colorLightBlue;
+			border-top: 5px solid transparent;
+			@include sp {
+				padding: 0 35px;
+				.c-block1 {
+					margin: 30px 0;
+				}
+			}
 		}
 	}
 
@@ -124,11 +192,19 @@ Css of home page
             line-height: 2;
             color: $colorBlack;
             margin: 51px 0 0;
-            // @include sp {
-            //     font-size: 1.6rem;
-            //     margin: 37px 0 0;
-            // }
+            @include sp {
+                font-size: 16px;
+                margin: 37px 0 0;
+            }
         }
+		.c-title2 {
+			@include sp {
+				margin-top: 50px;
+				&__jp {
+					margin-bottom: 12px;
+				}
+			}
+		}
 	}
 
 	&6 {
@@ -142,10 +218,17 @@ Css of home page
 			span {
 				margin-top: 25px;
 			}
+			@include sp {
+				margin-top: 50px;
+				padding-top: 50px;
+			}
 		}
 		.c-title2 {
 			margin-top: 75px;
 			margin-bottom: 80px;
+			@include sp {
+				margin: 40px 0;
+			}
 		}
 
 	}
@@ -154,21 +237,39 @@ Css of home page
 		.c-title2 {
 			margin-top: 150px;
 			margin-bottom: 50px;
+			@include sp {
+				margin-top: 75px;
+			}
 		}
 		.c-list4__row2 {
 			background: url(../../../assets/img/svg/step02.svg) no-repeat 62px 53px, url(../../../assets/img/svg/icon-seminar.svg) no-repeat 150px 57px;
+			@include sp {
+				background: url(../../../assets/img/svg/step02.svg) no-repeat 30px center;
+			}
 		}
 		.c-list4__row3 {
 			background: url(../../../assets/img/svg/step03.svg) no-repeat 62px 53px, url(../../../assets/img/svg/icon-note.svg) no-repeat 150px 57px;
+			@include sp {
+				background: url(../../../assets/img/svg/step03.svg) no-repeat 30px center;
+			}
 		}
 		.c-list4__row4 {
 			background: url(../../../assets/img/svg/step04.svg) no-repeat 62px 53px, url(../../../assets/img/svg/icon-note.svg) no-repeat 150px 57px;
+			@include sp {
+				background: url(../../../assets/img/svg/step04.svg) no-repeat 30px center;
+			}
 		}
 		.c-list4__row5 {
 			background: url(../../../assets/img/svg/step05.svg) no-repeat 62px 53px, url(../../../assets/img/svg/icon-meeting.svg) no-repeat 150px 57px;
+			@include sp {
+				background: url(../../../assets/img/svg/step05.svg) no-repeat 30px center;
+			}
 		}
 		.c-list4__row6 {
 			background: url(../../../assets/img/svg/step06.svg) no-repeat 62px 53px, url(../../../assets/img/svg/icon-handshake.svg) no-repeat 150px 57px;
+			@include sp {
+				background: url(../../../assets/img/svg/step06.svg) no-repeat 30px center;
+			}
 		}
 		
 	}

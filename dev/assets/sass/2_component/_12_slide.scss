@@ -8,11 +8,21 @@ video
     background-color: $colorBlue;
     height: 850px;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     padding-top: 80px;
+    @include sp {
+        padding: 2px 0 auto;
+    }
 
     &__img {
        padding-top: 19px;
        margin-left: -106.3px;
+       @include sp {
+           width: 100%;
+           margin: 0;
+       }
    }
 
    &__info {
@@ -20,6 +30,11 @@ video
        top: 350px;
        right: 75px;
        left: 696px;
+       @include sp {
+            top: 0;
+            left: 0;
+            position: relative;
+        }
    }
 
    &__title {
@@ -28,6 +43,13 @@ video
        line-height: 70px;
        color: $colorWhite;
        letter-spacing: 6.5px;
+       @include sp {
+           text-align: center;
+           font-size: 30px;
+           line-height: 1.5;
+           margin: 0 25px 20px 25px;
+           letter-spacing: 2px;
+       }
    }
 
    &__content {
@@ -37,5 +59,12 @@ video
        font-family: $notosan;
        color: $colorWhite;
        font-weight: bold;
+       @include sp {
+           margin: 0 25px 100px 25px;
+           font-size: 12px;
+           line-height: 1.9;
+           letter-spacing: 0.5px;
+           text-align: center;
+       }
    }
 }

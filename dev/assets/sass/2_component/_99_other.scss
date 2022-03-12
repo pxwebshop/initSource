@@ -63,6 +63,11 @@ other
     background-color: $colorWhite;
     border-left: 1px solid $colorBlue;
     border-right: 2px solid $colorBlue;
+    @include sp {
+        width: 100%;
+        margin-left: -30px;
+        border-top: 1px solid $colorBlue;
+    }
 
     &__text {
         font-size: 16px;
@@ -74,10 +79,18 @@ other
     &__img {
         width: 100%;
         padding-bottom: 80px;
+        @include sp {
+            padding-bottom: 0;
+        }
         &--padding {
             padding: 0 80px 80px 80px;
+            @include sp {
+                padding: 0 30px 30px;
+            }
         }
     }
+
+
 
     &__title {
         margin-bottom: 40px;
@@ -85,6 +98,9 @@ other
 
     &__txt {
         padding: 0 80px;
+        @include sp{
+            padding: 30px;
+        }
     }
     &__btn {
         height: 80px;
@@ -101,6 +117,11 @@ other
             background-color: $colorWhite;
             border: transparent;
             background: url(../../../assets/img/svg/icon_x.svg) no-repeat 430px center;
+        }
+        @include sp {
+            width: 375px;
+
+            
         }
     }
     
