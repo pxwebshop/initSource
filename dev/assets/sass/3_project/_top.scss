@@ -244,7 +244,7 @@ Css of home page
 		.c-list4__row2 {
 			background: url(../../../assets/img/svg/step02.svg) no-repeat 62px 53px, url(../../../assets/img/svg/icon-seminar.svg) no-repeat 150px 57px;
 			@include sp {
-				background: url(../../../assets/img/svg/step02.svg) no-repeat 30px center;
+				background: url(/assets/img/svg/step02.svg) no-repeat 30px center;
 			}
 		}
 		.c-list4__row3 {

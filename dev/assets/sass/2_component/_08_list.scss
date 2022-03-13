@@ -334,3 +334,22 @@ list
         margin-right: auto;
     }
 }
+
+.c-list {
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    &__wrap {
+        width: 33.33%;
+        margin: 10px 0;
+        padding-left: 30px;
+    }
+    &__number {
+        background-color: red;
+        display:block;
+        font-size: 2.0rem;
+        line-height: 2;
+        text-align: center;
+        font-weight: bold;
+    }
+}
