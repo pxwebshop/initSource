@@ -4,6 +4,78 @@ list
 
 /*
 ------------------------------------------------------------*/
-.c-list1{
-	
+.c-list1 {
+	$root: &;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    &__item {
+        width: 33.33%;
+        padding: 30px 0 0 30px;
+        @include sp {
+            width: 100%;
+            margin: 0 30px;
+        }
+        
+    }
+    &__description {
+        padding: 10px 20px 20px;
+        box-shadow: 0 0 5px $colorLightGrey;
+        #{$root}__title {
+            font-size: 1.8rem;
+            line-height: 1.5;
+            font-family: $roboto;
+        }
+        #{$root}__time {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            font-style: italic;
+            color: $colorGrey;
+        }
+        #{$root}__txt {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            color: $colorBlack;
+            text-align: justify;
+        }
+    }
+}
+
+.c-list2 {
+    $root: &;
+    
+    &__item {
+        padding: 30px 0;
+        display: flex;
+        border-bottom: 1px solid $colorLightGrey;
+        @include sp {
+            flex-wrap: wrap;
+        }
+    }
+    &__link {
+        width: 100%;
+        @include sp {
+            margin: 0 30px;
+        }
+    }
+    &__description {
+        margin: 0 30px;
+        #{$root}__title {
+            font-size: 1.8rem;
+            line-height: 1.5;
+            font-family: $roboto;
+        }
+        #{$root}__time {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            font-style: italic;
+            color: $colorGrey;
+        }
+        #{$root}__txt {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            color: $colorBlack;
+            text-align: justify;
+        }
+    }
 }
