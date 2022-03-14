@@ -300,6 +300,79 @@ list
   text-align: justify;
 }
 
+.c-list3 {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+@media screen and (max-width: 767px) {
+  .c-list3 {
+    margin: 0;
+  }
+}
+
+.c-list3__item {
+  width: 33.33%;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .c-list3__item {
+    width: 100%;
+    max-width: 370px;
+  }
+}
+
+.c-list3__img {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .c-list3__img {
+    width: 100%;
+  }
+}
+
+.c-list3__title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.c-list3__txt {
+  padding: 10px 20px 20px;
+}
+
+.c-list3__txt .c-list3__time {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: #838383;
+  text-align: right;
+}
+
+.c-list3__txt .c-list3__content {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.c-list3__txt figure {
+  display: inline;
+  -webkit-transition: padding 0.5s ease-in-out;
+  transition: padding 0.5s ease-in-out;
+}
+
+.c-list3__txt figure:hover {
+  padding-left: 30px;
+}
+
 /*------------------------------------------------------------
 table
 ------------------------------------------------------------*/
@@ -401,10 +474,6 @@ other
   font-family: "Roboto";
   font-size: 1.6rem;
   text-align: justify;
-}
-
-.c-articleDetail span {
-  float: right;
 }
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
